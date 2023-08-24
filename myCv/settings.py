@@ -76,12 +76,21 @@ WSGI_APPLICATION = 'myCv.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = { 
+    'default': {
+         'ENGINE': 'djongo',
+         'NAME' : 'dboncloud',
+         'ENFORCE_SCHEMA': True, # Set to True if you want to enforce a schema 
+         'CLIENT': { 
+            'host': 'mongodb+srv://husainshamshad68:Shamshad1432@formdata.teprasa.mongodb.net/?retryWrites=true&w=majority',
+            'username': 'husainshamshad68', 
+            'password': 'Shamshad1432', 
+            'authMechanism': 'SCRAM-SHA-1', # Update as needed 
+            
+        } 
+            
+    }
+ }
 
 
 # Password validation
