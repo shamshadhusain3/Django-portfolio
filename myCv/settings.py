@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-^a&b)eg957jyul+-l8tec%y^96x1y&%sx&yc@q^x03ebz@55oj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','.vercel.app','django-shamshad.ermks.in']
+ALLOWED_HOSTS = ['127.0.0.1','.vercel.app']
 
 
 # Application definition
@@ -38,12 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'myapp'
+    'myapp',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -76,15 +76,30 @@ WSGI_APPLICATION = 'myCv.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'mydb',
+#         'ENFORCE_SCHEMA': True,
+#         'CLIENT':{
+#             'host':'mongodb+srv://husainshamshad68:Shamshad1432@formdata.teprasa.mongodb.net/?retryWrites=true&w=majority',
+#             'username':'husainshamshad68',
+#             'password':'Shamshad1432',
+#             'authMechanism':'SCRAM-SHA-1',
+
+#         }
+#     }
+# }
+
 DATABASES = { 
     'default': {
          'ENGINE': 'djongo',
          'NAME' : 'dboncloud',
          'ENFORCE_SCHEMA': True, # Set to True if you want to enforce a schema 
          'CLIENT': { 
-            'host': 'mongodb+srv://husainshamshad68:Shamshad1432@formdata.teprasa.mongodb.net/?retryWrites=true&w=majority',
-            'username': 'husainshamshad68', 
-            'password': 'Shamshad1432', 
+            'host': 'mongodb+srv://husainshamshad111:Ankit111@clustertest.f0bn0nz.mongodb.net/?retryWrites=true&w=majority',
+            'username': 'husainshamshad111', 
+            'password': 'Ankit111', 
             'authMechanism': 'SCRAM-SHA-1', # Update as needed 
             
         } 
