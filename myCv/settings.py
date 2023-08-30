@@ -97,9 +97,9 @@ DATABASES = {
          'NAME' : 'dboncloud',
          'ENFORCE_SCHEMA': True, # Set to True if you want to enforce a schema 
          'CLIENT': { 
-            'host': 'mongodb+srv://husainshamshad111:Ankit111@clustertest.f0bn0nz.mongodb.net/?retryWrites=true&w=majority',
-            'username': 'husainshamshad111', 
-            'password': 'Ankit111', 
+            'host': 'mongodb+srv://husainshamshad68:Nsti12345@formdata.teprasa.mongodb.net/?retryWrites=true&w=majority',
+            'username': 'husainshamshad68', 
+            'password': 'Nsti12345', 
             'authMechanism': 'SCRAM-SHA-1', # Update as needed 
             
         } 
