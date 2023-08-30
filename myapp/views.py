@@ -9,7 +9,7 @@ def index(request):
         name=request.POST['name']
         email=request.POST['email']
         address=request.POST['address']
-        mydata=contact(name=name,email=email,address=address)
+        mydata=myapp_contact(name=name,email=email,address=address)
         mydata.save()
 
 
